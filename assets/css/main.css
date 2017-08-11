@@ -1,0 +1,36 @@
+/*
+======================
+        CSS
+======================
+*/
+
+body {
+  /*margin: 10%;*/
+}
+
+h1 {
+  margin-left: auto;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 3em;
+}
+
+body {
+  background-color: #5db8e6;
+}
+
+.box {
+  height: 20px;
+  width: 20px;
+  border: solid 1px black;
+  float: left;
+}
+
+.box:hover {
+  background-color: #959595
+}
+
+.container {
+  height: 600px;
+  width: 800px;
+  margin: auto;
+}
