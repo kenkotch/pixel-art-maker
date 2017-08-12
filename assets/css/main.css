@@ -35,18 +35,18 @@ h1 {
 }
 
 .box:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(224, 224, 224, 0.7);
 }
 
 .grid {
-  height: 600px;
-  width: 800px;
+  height: 594px;
+  width: 792px;
   margin: auto;
 }
 
 .container {
   height: auto;
-  width: 800px;
+  width: 793px;
   margin: auto;
 }
 
@@ -60,12 +60,13 @@ h1 {
   width: 30px;
   border: solid 1px black;
   float: left;
-  margin: .2em;
+  margin: .05em;
+  margin-top: .2em;
   border-radius: 25%;
 }
 
 .colorGrid:hover {
-  background-color: rgba(217, 217, 217, 0.31);
+  background-color: #000000;
 }
 
 
@@ -95,8 +96,12 @@ h1 {
   background-color: blue;
 }
 
-.purple {
-  background-color: purple;
+.indigo {
+  background-color: indigo;
+}
+
+.violet {
+  background-color: violet;
 }
 
 .black {
@@ -107,6 +112,7 @@ h1 {
   background-color: white;
 }
 
+/*
 .selectedColor {
   height: 30px;
   width: 30px;
@@ -114,4 +120,4 @@ h1 {
   -webkit-box-shadow: inset 0px 0px 0px 3px #000;
   -moz-box-shadow: inset 0px 0px 0px 3px #000;
   box-shadow: inset 0px 0px 0px 3px #000;
-}
+}*/
