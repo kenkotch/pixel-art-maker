@@ -34,46 +34,18 @@ function colorSwatch() {
   paint.addEventListener('click', function() {
     currentColor = event.target.id
 
-    //add currentColor to brushColor
-    currentPaint.classList.remove(currentColor)
-    // console.log(currentPaint)
+    //add currentColor to brushColor -there must be a better way than typing all the colors but putting the variable doesnt work
+    currentPaint.classList.remove('red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white', 'gold')
     currentPaint.classList.add(currentColor)
-    // console.log('currentColor is ' + currentColor)
-    // console.log('currentPaint is ' + currentPaint)
   })
 }
 
   // brush color indicator on right side
 function brushColor() {
   currentPaint = document.createElement('div')
-  currentPaint.classList.add('selectedColor')
+  currentPaint.classList.add('selectedColor', 'red')
   colorGrid.appendChild(currentPaint)
-  console.log(currentPaint);
 }
-
-
-
-  // function colorSwatch() {
-  //   currentColor = 'red' //  global variable
-  //   let colorGrid = document.querySelector('.colorContain')
-  //   const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white', 'gold']
-  //   for (var i = 0; i < colors.length; i++) {
-  //     let color = document.createElement('div')
-  //     color.classList.add('colorGrid')
-  //     color.style.backgroundColor = colors[i]
-  //     color.id = (colors[i])
-  //     colorGrid.appendChild(color)
-  //   }
-
-
-  // let brush = document.createElement('div')
-  // // brush.classList.add(.selectedColor)
-  // brush.lastChild(container)
-  // console.log(`brush: ${brush}`)
-  // console.log(`currentColor ${currentColor}`)
-
-  // li.innerHTML = text
-  // ol.appendChild(li)
 
 
 
