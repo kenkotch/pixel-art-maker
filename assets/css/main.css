@@ -178,9 +178,11 @@ a:hover{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#008080',GradientType=1 ); /* ie6-9 */
 }
 
-.footerText {
+p {
+  text-align: right;
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 1em;
-  line-height: 3em;
-  padding-right: 2em;
+  font-size: 1.2em;
+  line-height: 2em;
+  padding-right: 1.8em;
+  margin: 0;
 }

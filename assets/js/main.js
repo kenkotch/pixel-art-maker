@@ -47,10 +47,11 @@ function brushColor() {
   colorGrid.appendChild(currentPaint)
 
   // //add text to label current color
-  // let text = document.createTextNode('Current Color')
-  // // text.classList.add('colorLabel')
-  // let pal = document.querySelector('.colorContain')
-  // pal.appendChild(text)
+  let text = document.createElement('p')
+  let newText = document.createTextNode('Current Color')
+  text.appendChild(newText)
+  let pal = document.querySelector('.colorContain')
+  pal.appendChild(text)
 
   // fa-arrow-right
 
