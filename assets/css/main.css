@@ -52,6 +52,7 @@ a:hover{
   height: 594px;
   width: 792px;
   margin: auto;
+  background-color: #4e96b1;
 }
 
 .container {
@@ -77,11 +78,12 @@ a:hover{
 
 
 .colorLabel {
-  text-align: right;
-  /*margin-right: .01%;*/
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 2em;
-  /*margin-bottom: .1em;*/
+    text-align: right;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.95em;
+    padding-right: 1.8em;
+    margin: 0;
 }
 
 /*
@@ -178,11 +180,10 @@ a:hover{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#008080',GradientType=1 ); /* ie6-9 */
 }
 
-p {
+.footerText {
   text-align: right;
   font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.2em;
-  line-height: 2em;
-  padding-right: 1.8em;
-  margin: 0;
+  font-size: 1em;
+  line-height: 3em;
+  padding-right: 2em;
 }
