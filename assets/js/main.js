@@ -18,13 +18,14 @@ function gridMaker(numOfBoxes) {
 
   //color swatches
 function colorSwatch() {
-  currentColor = 'red' //  global variable
+
   colorGrid = document.querySelector('.colorContain')
   const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'plum', 'indigo', 'violet', 'black', 'white', 'gold', 'rainbow']
+  currentColor = colors[0] //  global variable
   for (var i = 0; i < colors.length; i++) {
     let color = document.createElement('div')
     color.classList.add('colorGrid')
-    color.style.backgroundColor = colors[i]
+    color.classList.add(colors[i])
     color.id = (colors[i])
     colorGrid.appendChild(color)
   }
@@ -45,8 +46,13 @@ function brushColor() {
   currentPaint.classList.add('selectedColor', 'red')
   colorGrid.appendChild(currentPaint)
 
-  //add text to label current color
+  // //add text to label current color
+  // let text = document.createTextNode('Current Color')
+  // // text.classList.add('colorLabel')
+  // let pal = document.querySelector('.colorContain')
+  // pal.appendChild(text)
 
+  // fa-arrow-right
 
 }
 
