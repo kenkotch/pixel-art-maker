@@ -12,16 +12,15 @@ function gridMaker(numOfBoxes) {
   //eventListener-box
   let listen = document.querySelector('.grid')
   listen.addEventListener('mousedown', function() {
-    // console.log(event.target.id)
     event.target.classList.toggle(currentColor)
   })
 }
 
-  //color swatch
+  //color swatches
 function colorSwatch() {
   currentColor = 'red' //  global variable
   colorGrid = document.querySelector('.colorContain')
-  const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white', 'gold']
+  const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'plum', 'indigo', 'violet', 'black', 'white', 'gold', 'rainbow']
   for (var i = 0; i < colors.length; i++) {
     let color = document.createElement('div')
     color.classList.add('colorGrid')
@@ -33,10 +32,10 @@ function colorSwatch() {
   paint = document.querySelector('.colorContain')
   paint.addEventListener('click', function() {
     currentColor = event.target.id
-
     //add currentColor to brushColor -there must be a better way than typing all the colors but putting the variable doesnt work
-    currentPaint.classList.remove('red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black', 'white', 'gold')
+    currentPaint.classList.remove('red', 'orange', 'yellow', 'green', 'blue', 'plum', 'indigo', 'violet', 'black', 'white', 'gold', 'rainbow')
     currentPaint.classList.add(currentColor)
+    console.log(currentColor);
   })
 }
 
@@ -45,8 +44,11 @@ function brushColor() {
   currentPaint = document.createElement('div')
   currentPaint.classList.add('selectedColor', 'red')
   colorGrid.appendChild(currentPaint)
-}
 
+  //add text to label current color
+
+
+}
 
 
 //  call functions
