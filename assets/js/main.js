@@ -7,14 +7,28 @@ function gridMaker(numOfBoxes) {
     let pixel = document.createElement('div')
     pixel.classList.add('box')
     pixel.id = (`pixel${[i]}`)
+    pixel.addEventListener('mouseenter', paint)
     position.appendChild(pixel)
   }
-  //eventListener-box
-  let listen = document.querySelector('.grid')
-  listen.addEventListener('mousedown', function() {
-    event.target.classList.toggle(currentColor)
-  })
 }
+
+  // click and drag to paint
+let mouseState = false
+let listen = document.querySelector('.grid')
+function click() {
+    event.target.classList.add(currentColor)
+    mouseState = true
+  }
+listen.addEventListener('mousedown', click)
+function paint(){
+  listen.addEventListener('mouseup', function() {
+    mouseState = false;
+  })
+  if (mouseState === true) {
+    event.target.classList.add(currentColor)
+  }
+}
+
 
   //color swatches
 function colorSwatch() {
