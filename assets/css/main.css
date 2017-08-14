@@ -40,7 +40,7 @@ a:hover{
 .box {
   height: 20px;
   width: 20px;
-  border: solid 1px black;
+  border: solid 1px #1a465b;
   float: left;
 }
 
@@ -52,6 +52,7 @@ a:hover{
   height: 594px;
   width: 792px;
   margin: auto;
+  border: solid 1px rgba(26, 70, 91, 0.8);
   background-color: #4e96b1;
 }
 
@@ -69,7 +70,7 @@ a:hover{
 .colorGrid {
   height: 30px;
   width: 30px;
-  border: solid 1px black;
+  border: solid 1px #1a465b;
   float: left;
   margin: .05em;
   margin-top: .2em;
@@ -84,6 +85,7 @@ a:hover{
     line-height: 1.95em;
     padding-right: 1.8em;
     margin: 0;
+    color: #0b1e28;
 }
 
 /*
@@ -149,9 +151,9 @@ a:hover{
 .selectedColor {
   height: 30px;
   width: 30px;
-  -webkit-box-shadow: inset 0px 0px 0px 4px #000;
-  -moz-box-shadow: inset 0px 0px 0px 4px #000;
-  box-shadow: inset 0px 0px 0px 4px #000;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #1a465b;
+  -moz-box-shadow: inset 0px 0px 0px 2px #1a465b;
+  box-shadow: inset 0px 0px 0px 2px #1a465b;
   float: right;
   margin-top: .2em;
   border-radius: 35%;

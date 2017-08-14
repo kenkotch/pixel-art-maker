@@ -14,15 +14,6 @@ function gridMaker(numOfBoxes) {
   listen.addEventListener('mousedown', function() {
     event.target.classList.toggle(currentColor)
   })
-
-
-  // listen.addEventListener('mouseenter', function() {
-  //   listen.addEventListener('mousedown', function() {
-  //     event.target.classList.toggle(currentColor)
-  //   })
-  // })
-
-
 }
 
   //color swatches
