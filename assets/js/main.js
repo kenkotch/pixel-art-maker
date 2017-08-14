@@ -14,6 +14,15 @@ function gridMaker(numOfBoxes) {
   listen.addEventListener('mousedown', function() {
     event.target.classList.toggle(currentColor)
   })
+
+
+  // listen.addEventListener('mouseenter', function() {
+  //   listen.addEventListener('mousedown', function() {
+  //     event.target.classList.toggle(currentColor)
+  //   })
+  // })
+
+
 }
 
   //color swatches
@@ -48,7 +57,8 @@ function brushColor() {
 
   // //add text to label current color
   let text = document.createElement('p')
-  let newText = document.createTextNode('Current Color')
+  text.classList.add('colorLabel')
+  let newText = document.createTextNode('Current Paint Color')
   text.appendChild(newText)
   let pal = document.querySelector('.colorContain')
   pal.appendChild(text)
